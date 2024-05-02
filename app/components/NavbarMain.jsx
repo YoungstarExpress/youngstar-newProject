@@ -47,12 +47,12 @@ export default function NavbarMain() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/servicePage" color="foreground">
+          <Link href="/ServicePage" color="foreground">
             {t("service")}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/companyPage">
+          <Link color="foreground" href="/CompanyPage">
             {t("about")}
           </Link>
         </NavbarItem>
