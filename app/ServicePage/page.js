@@ -1,5 +1,6 @@
 "use client"
-import { useState } from "react";
+
+import React  from "react";
 import { Tabs, Tab, Spacer } from "@nextui-org/react";
 import { HiDesktopComputer, HiOutlineGlobe, HiOutlineLibrary, HiOutlineReceiptTax, HiOutlineSwitchHorizontal } from "react-icons/hi";
 import Footer from "../Footer";
@@ -7,7 +8,7 @@ import Image from "next/image";
 import NavbarMain from "../components/NavbarMain";
 
 function page() {
-    const [selected, setSelected] = useState("custom");
+    const [selected, setSelected] = React.useState("custom");
 
     return (
         <div> 
