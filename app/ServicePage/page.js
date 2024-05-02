@@ -7,7 +7,7 @@ import Footer from "../Footer";
 import Image from "next/image";
 import NavbarMain from "../components/NavbarMain";
 
-function page() {
+function Page() {
     const [selected, setSelected] = React.useState("custom");
 
     return (
@@ -309,4 +309,4 @@ function page() {
     )
 }
 
-export default page
+export default Page;
