@@ -1,0 +1,184 @@
+import Image from "next/image";
+import React from "react";
+import { LuMapPin } from "react-icons/lu";
+import { useTranslation } from "react-i18next";
+
+function Footer() {
+  const {
+    t,
+    i18n: { changeLanguage, language }
+  } = useTranslation();
+
+  return (
+    <div>
+      <section className="py-10 bg-primary-800 sm:pt-16 lg:pt-24">
+        <div className="px-4 mx-auto sm:px-6 lg:px-6 max-w-full">
+          <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+            <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
+              <Image
+                src={"/logo.png"}
+                width={120}
+                height={120}
+                alt="company logo"
+              />
+              <p className="text-base leading-relaxed text-white mt-7">
+                {`เราเป็นผู้เชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับขั้นตอนการนำเข้าสินค้าทุกชนิด รวมทั้งพิกัดอัตราภาษีต่างๆ ทั้งผู้ชำนาญศุลกากร ตัวแทนออกของรับอนุญาต ช่วยลดภาระด้านการนำเข้าสินค้า`}
+              </p>
+
+            </div>
+            <div>
+              <p className="text-sm font-semibold tracking-widest text-gray-200 uppercase">
+                {"บริษัทของเรา"}
+              </p>
+              <ul className="mt-6 space-y-4">
+                <li>
+                  <a
+                    href="/"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                    {t("home")}{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/servicePage"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                    {t("service")}{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/#Company"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                    {t("about")}{" "}{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contractPage"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                    {t("contract")}{" "}{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-sm font-semibold tracking-widest text-gray-200 uppercase">
+              {t("help")}
+              </p>
+
+              <ul className="mt-6 space-y-4">
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                    {t("customer-service")}{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    {" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+              <p className="text-sm font-semibold tracking-widest text-gray-200 uppercase">
+              {t("location")}
+              </p>
+              <ul className="mt-6 space-y-4">
+                <li className="">
+                  <a
+                    href="#"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    <LuMapPin size={30} className="" />
+                    <div className="pl-2">
+                    {t("address1")}
+                      <br />{t("address2")}{" "}<br />
+                      {t("address3")}
+                      <span className="">
+                        <br />
+                        {t("address1")}
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li className="">
+                  <a
+                    href="https://www.google.co.th/maps/place/Young+Star+Logistic+Co.,Ltd./@13.9838791,100.5884662,17z/data=!3m1!4b1!4m6!3m5!1s0x30e281be407da2c9:0x55ab4bf4eb07d6cf!8m2!3d13.9838739!4d100.5910411!16s%2Fg%2F1tdv9qr7?hl=th&entry=ttu"
+                    title=""
+                    className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
+                  >
+                    <LuMapPin size={30} className="" />
+                    <div className="pl-2">
+                    {t("address-lo1")}<br />
+                      {t("address-lo2")}
+                      <span className="">
+                        <br />
+                        {t("address-lo3")}
+                      </span>
+                    </div>
+                    {/* <div className="pl-2">
+                      Young Star Express Group <br/>
+                      {`249/11 Moo.6 Rungsit-Pathum Thani Rd., Pathum Thani 12000`}
+                      <span className="">
+                        <br />
+                        {`02-958-7621`}
+                      </span>
+                    </div> */}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr className="mt-16 mb-10 border-gray-200" />
+          <p className="text-sm text-center text-white">
+            © Copyright 2024, Young Star Express Group International Co., Ltd.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Footer;
