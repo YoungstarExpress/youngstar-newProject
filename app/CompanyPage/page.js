@@ -7,7 +7,7 @@ import NavbarMain from "../components/NavbarMain.jsx";
 import CallToAction from "../components/CallToAction";
 import { useTranslation } from "react-i18next";
 
-function page() {
+function Page() {
     const {
         t,
         i18n: { changeLanguage, language }
@@ -92,4 +92,4 @@ function page() {
     )
 }
 
-export default page
+export default Page;

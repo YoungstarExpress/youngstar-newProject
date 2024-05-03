@@ -7,7 +7,7 @@ import { Divider, Spacer } from '@nextui-org/react';
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
-function page() {
+function Page() {
     const {
         t,
         i18n: { changeLanguage, language }
@@ -237,4 +237,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
