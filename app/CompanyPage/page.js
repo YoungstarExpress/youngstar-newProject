@@ -1,26 +1,45 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Card } from "@nextui-org/react";
+import { Card, Spacer } from "@nextui-org/react";
 import Footer from "../Footer";
 import NavbarMain from "../components/NavbarMain.jsx";
 import CallToAction from "../components/CallToAction";
+import { useTranslation } from "react-i18next";
 
 function page() {
+    const {
+        t,
+        i18n: { changeLanguage, language }
+      } = useTranslation();
+
     return (
         <div className="bg-content2" id="Company">
             <NavbarMain />
-            <div className="max-w-5xl mx-auto text-center">
-                <h2 className="pt-20 text-4xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                    {"เกี่ยวกับบริษัท"}
-                </h2>
-                <p className="mt-5 text-2xl">
-                    {"เราเป็นผู้เชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับขั้นตอนการนำเข้าสินค้าทุกชนิด รวมทั้งพิกัดอัตราภาษีต่างๆ ทั้งผู้ชำนาญศุลกากร ตัวแทนออกของรับอนุญาต ช่วยลดภาระด้านการนำเข้าสินค้า"
-                    }
-                </p>
+            <div className="relative py-12 bg-gray-900 sm:py-16 lg:py-20">
+                <div className="absolute inset-0">
+                    <Image className="object-cover w-full h-full" width={3932} height={2620} src="/sea-hero.jpg" alt="" />
+                </div>
+                <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
+                    <div className="flex justify-start max-w-7xl mx-auto p-10">
+                        <div className="overflow-hidden bg-white md:w-1/2">
+                            <div className="p-8 sm:py-10 sm:px-12">
+                                <p className="text-4xl font-semibold text-gray-900">
+                                    {t("company")}
+                                </p>
+                                <h2 className="p-2 mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
+                                {t("hero-title")}
+                                </h2>
+                                {/* <p className=" mt-6 text-base font-normal leading-tight text-gray-900">
+                                    {`เราเป็นผู้เชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับขั้นตอนการนำเข้าสินค้าทุกชนิด รวมทั้งพิกัดอัตราภาษีต่างๆ ทั้งผู้ชำนาญศุลกากร ตัวแทนออกของรับอนุญาต ช่วยลดภาระด้านการนำเข้าสินค้า`}
+                                </p> */}
+                            </div>
+                        </div>
+                    </div>   
+                </div>
             </div>
             <div className="flex justify-center">
-                <Card className="mt-10 mb-10 px-4 py-10 bg-white sm:py-16 sm:px-0 lg:py-16 lg:px-10 shadow-xl">
+                <Card className="mt-20 mb-10 px-4 py-10 bg-white sm:py-16 sm:px-0 lg:py-16 lg:px-10 shadow-xl">
                     <div className="mx-auto max-w-7xl sm:px-0 lg:px-8">
                         <div className="grid items-center max-w-7xl grid-cols-1 mx-auto md:grid-cols-2 md:gap-x-16">
                             <div className="md:order-2">
@@ -38,15 +57,12 @@ function page() {
                             </div>
                             <div className="px-4 py-8 text-center md:text-left md:p-0 md:order-1">
                                 <h2 className="mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
-                                    {`ยังสตาร์ เอ็กซ์เพรส กรุ๊ป อินเตอร์เนชั่นแนล`}
+                                {t("hero-title")}
                                 </h2>
                                 <p className="mt-8 text-2xl font-normal text-gray-800 ">
-                                    {`ณ วันที่ 15 มกราคม 2539 บริษัท ยังสตาร์ เอ็กซ์เพรส กรุ๊ป อินเตอร์เนชั่นแนล จำกัด ได้เริ่มก่อตั้งขึ้น โดย                          
-                  คุณดรุณี ศรีปัญญารัตน์ และ หม่อมหลวงปานยี่หวา สุขสวัสดิ์ และเพื่อน ซึ่งในระยะเริ่มแรกมีพนักงานเพียง 15 คน 
-                  ทำหน้าที่ให้บริการพิธีการศุลกากรในการนำสินค้าเข้า – ส่งออก
-		              หลังจากนั้น บริษัทฯ ได้เจริญเติบโตขึ้นตามลำดับ จวบจนถึงปัจจุบัน เป็นระยะเวลาเกือบ28ปี บริษัทฯ มีพนักงานประมาณ 140 คน และมีลูกค้าประจำและทั่วไปมากกว่า 100 ราย ทำให้ได้ว่าบริษัทของเรามีความเชี่ยวชาญ ในบริการพิธีการศุลกากรในการนำสินค้าเข้า – ส่งออก`}
-                                </p>
-                                <a
+                                 {t("company-story")}                           
+                                 </p>
+                                {/* <a
                                     href="#"
                                     title=""
                                     className="text-2xl inline-flex items-center mt-8 font-bold text-gray-900 rounded hover:text-gray-600  group focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
@@ -64,7 +80,7 @@ function page() {
                                             clipRule="evenodd"
                                         />
                                     </svg>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>

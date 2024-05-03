@@ -33,12 +33,14 @@ export default function NavbarMain() {
   return (
     <Navbar isBordered maxWidth="full">
       <NavbarBrand>
+        <Link href="/">
         <Image
           src={"/logo-small.png"}
           width={100}
           height={60}
           alt="company logo"
         />
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
         <NavbarItem>
@@ -103,7 +105,7 @@ export default function NavbarMain() {
         <NavbarItem>
           <Button
             as={Link}
-            href="#"
+            href="ContractPage"
             variant="solid"
             className=" bg-gradient-to-r from-primary to-primary-800 text-white font-normal text-md"
           >

@@ -17,18 +17,18 @@ function Footer() {
             <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
               <Image
                 src={"/logo.png"}
-                width={120}
-                height={120}
+                width={150}
+                height={15}
                 alt="company logo"
               />
               <p className="text-base leading-relaxed text-white mt-7">
-                {`เราเป็นผู้เชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับขั้นตอนการนำเข้าสินค้าทุกชนิด รวมทั้งพิกัดอัตราภาษีต่างๆ ทั้งผู้ชำนาญศุลกากร ตัวแทนออกของรับอนุญาต ช่วยลดภาระด้านการนำเข้าสินค้า`}
+               {t("footer")}
               </p>
 
             </div>
             <div>
               <p className="text-sm font-semibold tracking-widest text-gray-200 uppercase">
-                {"บริษัทของเรา"}
+                {t("company")}
               </p>
               <ul className="mt-6 space-y-4">
                 <li>
@@ -43,7 +43,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/servicePage"
+                    href="/ServicePage"
                     title=""
                     className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
                   >
@@ -53,7 +53,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/#Company"
+                    href="/CompanyPage"
                     title=""
                     className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
                   >
@@ -63,7 +63,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/contractPage"
+                    href="/ContractPage"
                     title=""
                     className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
                   >
@@ -77,7 +77,6 @@ function Footer() {
               <p className="text-sm font-semibold tracking-widest text-gray-200 uppercase">
               {t("help")}
               </p>
-
               <ul className="mt-6 space-y-4">
                 <li>
                   <a
@@ -127,7 +126,7 @@ function Footer() {
               <ul className="mt-6 space-y-4">
                 <li className="">
                   <a
-                    href="#"
+                    href="https://maps.app.goo.gl/t9dLnewRNNWqPZag7"
                     title=""
                     className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
                   >
@@ -158,14 +157,6 @@ function Footer() {
                         {t("address-lo3")}
                       </span>
                     </div>
-                    {/* <div className="pl-2">
-                      Young Star Express Group <br/>
-                      {`249/11 Moo.6 Rungsit-Pathum Thani Rd., Pathum Thani 12000`}
-                      <span className="">
-                        <br />
-                        {`02-958-7621`}
-                      </span>
-                    </div> */}
                   </a>
                 </li>
               </ul>

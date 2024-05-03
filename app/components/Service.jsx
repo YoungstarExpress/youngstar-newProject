@@ -144,22 +144,10 @@ function Service() {
                   <Image src="/boat.png" width={100} height={100} alt="" />
                 </div>
                 <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
-                  {`บริการการขนส่งทางเรือ`}
+                  {t("sea-service-title")}
                 </h3>
                 <p className="mt-4 text-2xl text-gray-800">
-                  {`บริการขนส่งระหว่างประเทศ ทางเรือ ให้บริการขนส่งสินค้าทั้งแบบเต็มตู้คอนเทนเนอร์ (FCL) และแบบไม่เต็มตู้คอนเทนเนอร์ (LCL) ครอบคลุมท่าเรือทั่วทุกทวีป`}
-                </p>
-              </div>
-              <div>
-                <div className="flex items-center justify-center">
-                  <Image src="/Car.png" width={100} height={100} alt="" />
-                </div>
-                <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
-                  {`บริการการขนส่งทางรถ`}
-                </h3>
-                <p className="mt-4 text-2xl text-gray-800">
-                  {`ให้บริการจัดส่งไปยังปลายทางทั่วประเทศและประเทศใกล้เคียง 
-                  การขนส่งทางบก การขนส่งต่อเนื่องหลายรูปแบบ การขนส่งข้ามพรมแดน บริการขนส่งสารเคมี บริการขนส่งห้องเย็น`}
+                {t("sea-service")}
                 </p>
               </div>
               <div>
@@ -167,10 +155,21 @@ function Service() {
                   <Image src="/Air.png" width={100} height={100} alt="" />
                 </div>
                 <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
-                  {`บริการการขนส่งทางอากาศ`}
+                {t("air-service-title")}
                 </h3>
                 <p className="mt-4 text-2xl text-gray-800">
-                  {`เชี่ยวชาญในการให้บริการขนส่งสินค้าทางอากาศระหว่างประเทศอย่างมืออาชีพ บริการนำเข้าและส่งออกสินค้าในประเทศและต่างประเทศ บริการทั้งเที่ยวบินตรง เที่ยวบินต่อ สู่ปลายทางทั่วโลก`}
+                {t("air-service")}
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center justify-center">
+                  <Image src="/Car.png" width={100} height={100} alt="" />
+                </div>
+                <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
+                {t("land-service-title")}
+                </h3>
+                <p className="mt-4 text-2xl text-gray-800">
+                {t("land-service")}
                 </p>
               </div>
             </div>

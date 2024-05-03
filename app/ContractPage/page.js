@@ -5,9 +5,14 @@ import { HiOutlineClock, HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone 
 import Footer from '../Footer';
 import { Divider, Spacer } from '@nextui-org/react';
 import Image from "next/image";
-
+import { useTranslation } from "react-i18next";
 
 function page() {
+    const {
+        t,
+        i18n: { changeLanguage, language }
+      } = useTranslation();
+
   return (
     <div>
        <NavbarMain />
@@ -18,7 +23,8 @@ function page() {
                             <div className="text-center lg:text-left">
                                 <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">{"ติดต่อเรา"}<br className="hidden lg:block" /></h2>
                                 <h2 className=" mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
-                                    {`ยังสตาร์ เอ็กซ์เพรส กรุ๊ป อินเตอร์เนชั่นแนล`}
+                                    {t("hero-title")}
+                                    {t("hero-subtitle")}
                                 </h2>
                             </div>
                             <svg className="w-auto h-4 mx-auto mt-8 text-gray-300 sm:mt-12 lg:mx-0" viewBox="0 0 172 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -52,59 +58,38 @@ function page() {
                                 <div className="flex flex-col items-center sm:space-x-20 lg:justify-start sm:justify-center sm:flex-row">
                                     <div className="-ml-12 md:ml-0">
                                         <div className="flex items-center md:mt-5 mt-0 ">
-                                            <HiOutlineClock size={"40"} className="text-primary" />
+                                            <HiOutlineClock size={"40"} className="text-primary shrink-0" />
                                             <span className="ml-5 text-xl text-gray-900">
-                                                {"เวลาทำการ"}
+                                                {t("open-time")}
                                             </span>
                                         </div>
                                         <p className="ml-14 mt-2 text-md text-gray-900">
-                                            {"จันทร์-ศุกร์"}
+                                            {t("day")}
                                         </p>
                                         <p className="ml-14 text-md text-gray-900">
                                             {"9.00-17.30"}
                                             <Spacer y={20} />
                                         </p>
                                     </div>
-                                    <div className="flex items-center md:mt-5 mt-0">
+                                    <div className="flex items-center md:-mt-5 mt-0">
                                         <div className="">
                                             <div className="flex items-center">
                                                 <HiOutlineLocationMarker size={"40"} className="text-primary" />
                                                 <p className="ml-5 text-xl text-gray-900">
-                                                    {"ที่อยู่"}
+                                                    {t("location")}
                                                 </p>
                                             </div>
+                                            <a href="https://maps.app.goo.gl/t9dLnewRNNWqPZag7">
                                             <p className="md:ml-14 mt-2 text-md text-gray-900 ">
-                                                <span className="">
-                                                    บริษัท ยังสตาร์ เอ็กซ์เพรส กรุ๊ป
-                                                    <br />อินเตอร์เนชั่นแนล จำกัด{" "}<br />
-                                                    {`29 ซอย บางนา-ตราด แยก 22`}
+                                                <span className="flex text-base transition-all duration-200 hover:text-primary focus:text-primary">
+                                                {t("address6")}
+                                                    <br />{t("address5")}{" "}
                                                 </span>
-                                                <br />
-                                                {`ถนน บางนา-ตราด.,`}
-                                                <br />
-                                                {`กรุงเทพมหานคร 10260`}
+                                                {t("address4")}
                                             </p>
+                                          </a>  
                                         </div>
                                     </div>
-                                    {/* <div className="mt-5">
-                                            <div className="flex justify-start ">
-                                                <HiOutlineLocationMarker size={"40"} className="text-primary" />
-                                                <p className="ml-5  text-xl text-gray-900">
-                                                    {"ที่อยู่"}
-                                                </p>
-                                            </div>
-                                            <p className="ml-0 md:ml-14 mt-2 text-md text-gray-900 ">
-                                                <span className="">
-                                                    บริษัท ยังสตาร์ เอ็กซ์เพรส กรุ๊ป
-                                                    <br />อินเตอร์เนชั่นแนล จำกัด{" "}<br />
-                                                    {`29 ซอย บางนา-ตราด แยก 22`}
-                                                </span>
-                                                <br />
-                                                {`ถนน บางนา-ตราด.,`}
-                                                <br />
-                                                {`กรุงเทพมหานคร 10260`}
-                                            </p>
-                                        </div> */}
                                 </div>
                             </div>
                             <div className="relative mt-8 sm:mt-5">
@@ -116,7 +101,7 @@ function page() {
                                         <div className="flex items-center mt-5 sm:mt-0">
                                             <HiOutlinePhone size={"40"} className="text-primary" />
                                             <span className="ml-5 text-xl text-gray-900">
-                                                {"โทร"}
+                                                {t("call")}
                                             </span>
                                         </div>
                                         <p className="ml-14 text-md text-gray-900">
@@ -128,7 +113,7 @@ function page() {
                                             <div className="flex items-center">
                                                 <HiOutlineMail size={"40"} className="text-primary" />
                                                 <p className="ml-5 text-xl text-gray-900">
-                                                    {"อีเมล"}
+                                                {t("email")}
                                                 </p>
                                             </div>
                                             <a className="ml-14 mt-2 text-md text-gray-900">
@@ -152,7 +137,7 @@ function page() {
                         <div>
                             <div className="text-center lg:text-left">
                                 <h2 className="pt-2 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
-                                    {`ยังสตาร์โลจิสติกส์`}
+                                   {t("address-lo1")}
                                 </h2>
                             </div>
                             <svg className="w-auto h-4 mx-auto mt-8 text-gray-300 sm:mt-12 lg:mx-0" viewBox="0 0 172 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -188,13 +173,13 @@ function page() {
                                 <div className="relative flex flex-col items-center sm:space-x-20 lg:justify-start sm:justify-center sm:flex-row">
                                     <div className="-ml-16 md:ml-0">
                                         <div className="flex items-center mt-5 sm:mt-0">
-                                            <HiOutlineClock size={"40"} className="text-primary" />
+                                            <HiOutlineClock size={"40"} className="text-primary shrink-0" />
                                             <span className="ml-5 text-xl text-gray-900">
-                                                {"เวลาทำการ"}
+                                            {t("open-time")}
                                             </span>
                                         </div>
                                         <p className="ml-14 mt-2 text-md text-gray-900">
-                                            {"จันทร์-ศุกร์"}
+                                        {t("day")}
                                         </p>
                                         <p className="ml-14 text-md text-gray-900">
                                             {"9.00-17.30"}
@@ -205,18 +190,18 @@ function page() {
                                             <div className="flex items-center">
                                                 <HiOutlineLocationMarker size={"40"} className="text-primary" />
                                                 <p className="ml-5 text-xl text-gray-900">
-                                                    {"ที่อยู่"}
+                                                {t("location")}
                                                 </p>
                                             </div>
+                                            <a  href="https://www.google.co.th/maps/place/Young+Star+Logistic+Co.,Ltd./@13.9838791,100.5884662,17z/data=!3m1!4b1!4m6!3m5!1s0x30e281be407da2c9:0x55ab4bf4eb07d6cf!8m2!3d13.9838739!4d100.5910411!16s%2Fg%2F1tdv9qr7?hl=th&entry=ttu">
                                             <p className="md:ml-14 mt-2 text-md text-gray-900 ">
-                                                <span className="">
-                                                    บริษัท ยังสตาร์โลจิสติกส์ จำกัด
+                                                <span className="flex text-base transition-all duration-200 hover:text-primary focus:text-primary">
+                                                {t("address-lo1")}
                                                     {" "}<br />
-                                                    {`249/11 หมู่.6 ถนน รังสิต-ปทุมธานี.,`}
+                                                    {t("address-lo2")}
                                                 </span>
-                                                <br />
-                                                {`ปทุมธานี 12000`}
                                             </p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -229,26 +214,13 @@ function page() {
                                             <div className="flex items-center mt-5 sm:mt-0">
                                                 <HiOutlinePhone size={"40"} className="text-primary" />
                                                 <span className="ml-5 text-xl text-gray-900">
-                                                    {"โทร"}
+                                                {t("call")}
                                                 </span>
                                             </div>
                                             <p className="ml-14 text-md text-gray-900">
                                                 {"02-958-7621"}
                                             </p>
                                         </div>
-                                        {/* <div className="flex items-center mt-5 sm:mt-0">
-                                        <div className="">
-                                            <div className="flex items-center">
-                                                <HiOutlineMail  size={"40"} className="text-primary" />
-                                                <p className="ml-5 text-xl text-gray-900">
-                                                    {"อีเมล"}
-                                                </p>
-                                            </div>
-                                            <a  className="ml-14 mt-2 text-md text-gray-900">
-                                                info@ysegroup.co.th
-                                            </a>
-                                        </div>
-                                    </div> */}
                                     </div>
                                 </div>
                             </div>
