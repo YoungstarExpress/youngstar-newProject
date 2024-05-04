@@ -23,7 +23,7 @@ function Hero() {
             <div className="md:p-2 md:pt-4 sm:pt-0 text-5xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-l from-amber-500 via-primary-900 to-primary-700 md:text-7xl font-bold leading-relaxed">
               {t("hero-title")}
             </div>
-            <div className="md:pt-4  sm:pt-0 text-5xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-primary-900 to-primary-700 md:text-7xl font-bold leading-relaxed">
+            <div className="md:pt-4  sm:pt-0 text-5xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-primary-900 to-primary-700 md:text-7xl font-bold leading-relaxed">
               {t("hero-subtitle")}
             </div>
           </div>
