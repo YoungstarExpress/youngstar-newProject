@@ -66,10 +66,13 @@ export default function NavbarMain() {
       </NavbarContent>
       <NavbarContent justify="end" className="gap-4">
         <NavbarItem className="hidden lg:flex">
-          <Dropdown>
+          <Dropdown 
+          className="bg-white"
+          >
             <DropdownTrigger>
               <Button
                 variant="bordered"
+                color="default"
                 className="capitalize"
                 startContent={currentLanguage === "th"
                   ? <Image src="/Thailand.png" width={30} height={20} alt="" className="" />
@@ -87,7 +90,8 @@ export default function NavbarMain() {
               selectedKeys={[currentLanguage]}
               onSelectionChange={(keys) => _onChangeLanguage(keys.currentKey)}
             >
-              <DropdownItem key={"th"}>
+              <DropdownItem key={"th"}
+              >
                 <div className="flex justify-center gap-x-2">
                   <Image src="/Thailand.png" width={30} height={20} alt="" className="" />
                   Th

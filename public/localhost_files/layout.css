@@ -2299,7 +2299,7 @@ video {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-background) / var(--nextui-background-opacity, var(--tw-text-opacity)));
 }
-.text-black {
+.text-content1 {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -2372,11 +2372,11 @@ video {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
-.text-gray-800 {
+.text-content1 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.text-gray-900 {
+.text-content1 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }

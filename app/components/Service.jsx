@@ -17,13 +17,13 @@ function Service() {
        sm:py-10 lg:py-20 mb-10">
         <div className="px-4  mx-auto max-w-full sm:px-6 lg:px-4">
           <div className="max-w-4xl mx-auto text-center xl:max-w-7xl">
-            <div className=" text-3xl font-semibold text-gray-900 sm:text-6xl lg:text-4xl xl:text-5xl leading-relaxed">
+            <div className=" text-3xl font-semibold text-content1 sm:text-6xl lg:text-4xl xl:text-5xl leading-relaxed">
             {t("service-title1")}
             </div>
-            <div className="pt-4 text-3xl font-semibold text-gray-900 sm:text-6xl lg:text-5xl xl:text-5xl">
+            <div className="pt-4 text-3xl font-semibold text-content1 sm:text-6xl lg:text-5xl xl:text-5xl">
             {t("service-title2")}
             </div>
-            <div className="pt-4 text-3xl font-semibold  text-gray-900 sm:text-6xl lg:text-5xl xl:text-5xl">
+            <div className="pt-4 text-3xl font-semibold  text-content1 sm:text-6xl lg:text-5xl xl:text-5xl">
             {t("service-title3")}
             </div>
           </div>
@@ -35,10 +35,10 @@ function Service() {
                   <Button isIconOnly color="primary" variant="flat">
                     <HiOutlineLibrary size="26" className="" />
                   </Button>
-                  <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10 ">
+                  <h3 className="mt-2 text-2xl font-bold text-content1 sm:mt-10 ">
                   {t("service-boxtitle1")}
                   </h3>
-                  <p className="mt-6 text-2xl text-gray-800">
+                  <p className="mt-6 text-2xl text-content1">
                   {t("service-box1")}
                   </p>
                 </div>
@@ -49,10 +49,10 @@ function Service() {
                     <Button isIconOnly color="primary" variant="flat">
                       <HiDesktopComputer size="30" className="" />
                     </Button>
-                    <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10 font-pj">
+                    <h3 className="mt-2 text-2xl font-bold text-content1 sm:mt-10 font-pj">
                     {t("service-boxtitle2")}
                     </h3>
-                    <p className="mt-6 text-2xl text-gray-800">
+                    <p className="mt-6 text-2xl text-content1">
                     {t("service-box2")}
                     </p>
                   </div>
@@ -66,10 +66,10 @@ function Service() {
                     <Button isIconOnly color="primary" variant="flat">
                       <HiOutlineSwitchHorizontal size="26" className="" />
                     </Button>
-                    <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">
+                    <h3 className="mt-2 text-2xl font-bold text-content1 sm:mt-10">
                     {t("service-boxtitle5")}
                     </h3>
-                    <p className="mt-6 text-2xl text-gray-800 font-pj">
+                    <p className="mt-6 text-2xl text-content1 font-pj">
                     {t("service-box5")}
                     </p>
                   </div>
@@ -80,10 +80,10 @@ function Service() {
                   <Button isIconOnly color="primary" variant="flat">
                     <HiOutlineGlobe size="30" className="" />
                   </Button>
-                  <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">
+                  <h3 className="mt-2 text-2xl font-bold text-content1 sm:mt-10">
                   {t("service-boxtitle6")}
                   </h3>
-                  <p className="mt-6 text-2xl text-gray-800 font-pj">
+                  <p className="mt-6 text-2xl text-content1 font-pj">
                   {t("service-box6")}
                   </p>
                 </div>
@@ -95,10 +95,10 @@ function Service() {
                   <Button isIconOnly color="primary" variant="flat">
                     <HiOutlineReceiptTax size="30" className="" />
                   </Button>
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900 sm:mt-10 ">
+                  <h3 className="mt-8 text-2xl font-bold text-content1 sm:mt-10 ">
                   {t("service-boxtitle3")}
                   </h3>
-                  <p className="mt-6 text-2xl text-gray-800 font-800">
+                  <p className="mt-6 text-2xl text-content1 font-800">
                   {t("service-box3")}
                   </p>
                 </div>
@@ -109,10 +109,10 @@ function Service() {
                   <Button isIconOnly color="primary" variant="flat">
                     <HiOutlineCube size="30" className="" />
                   </Button>
-                  <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">
+                  <h3 className="mt-2 text-2xl font-bold text-content1 sm:mt-10">
                   {t("service-boxtitle4")}
                   </h3>
-                  <p className="mt-6 text-2xl text-gray-800">
+                  <p className="mt-6 text-2xl text-content1">
                   {t("service-box4")}
                   </p>
                 </div>
@@ -126,10 +126,10 @@ function Service() {
       <section className="py-4 bg-white sm:py-16 lg:py-0">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className=" max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold leading-tight text-content1 sm:text-4xl lg:text-5xl">
               {t("logistics-service")}
             </h2>
-            <p className="max-w-xl mx-auto mt-4 text-2xl leading-relaxed text-gray-800">
+            <p className="max-w-xl mx-auto mt-4 text-2xl leading-relaxed text-content1">
               {t("logistics-service-subtitle")}
             </p>
           </div>
@@ -143,10 +143,10 @@ function Service() {
                 <div className="flex items-center justify-center  mx-auto ">
                   <Image src="/boat.png" width={100} height={100} alt="" />
                 </div>
-                <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
+                <h3 className="mt-6 text-2xl font-semibold leading-tight text-content1 md:mt-10">
                   {t("sea-service-title")}
                 </h3>
-                <p className="mt-4 text-2xl text-gray-800">
+                <p className="mt-4 text-2xl text-content1">
                 {t("sea-service")}
                 </p>
               </div>
@@ -154,10 +154,10 @@ function Service() {
                 <div className="flex items-center justify-center">
                   <Image src="/Air.png" width={100} height={100} alt="" />
                 </div>
-                <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
+                <h3 className="mt-6 text-2xl font-semibold leading-tight text-content1 md:mt-10">
                 {t("air-service-title")}
                 </h3>
-                <p className="mt-4 text-2xl text-gray-800">
+                <p className="mt-4 text-2xl text-content1">
                 {t("air-service")}
                 </p>
               </div>
@@ -165,10 +165,10 @@ function Service() {
                 <div className="flex items-center justify-center">
                   <Image src="/Car.png" width={100} height={100} alt="" />
                 </div>
-                <h3 className="mt-6 text-2xl font-semibold leading-tight text-black md:mt-10">
+                <h3 className="mt-6 text-2xl font-semibold leading-tight text-content1 md:mt-10">
                 {t("land-service-title")}
                 </h3>
-                <p className="mt-4 text-2xl text-gray-800">
+                <p className="mt-4 text-2xl text-content1">
                 {t("land-service")}
                 </p>
               </div>

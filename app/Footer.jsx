@@ -137,7 +137,6 @@ function Footer() {
                       {t("address3")}
                       <span className="">
                         <br />
-                        {t("address1")}
                       </span>
                     </div>
                   </a>
@@ -154,7 +153,6 @@ function Footer() {
                       {t("address-lo2")}
                       <span className="">
                         <br />
-                        {t("address-lo3")}
                       </span>
                     </div>
                   </a>

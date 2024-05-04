@@ -6,6 +6,7 @@ import Vission from "./components/Vission.jsx";
 import CallToAction from "./components/CallToAction.jsx";
 import Footer from "./Footer.jsx";
 import NavbarMain from "./components/NavbarMain.jsx";
+import HeroSecond from "./components/HeroSecond.jsx";
 
 
 export default function page() {

@@ -44,7 +44,7 @@ module.exports = {
             // secondary: {
             // },
             content1: {
-              DEFAULT: "#FFFFFF"
+              DEFAULT: "#27592D"
             },
             content2: {
               DEFAULT: "#D1F5D6"

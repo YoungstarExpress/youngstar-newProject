@@ -23,17 +23,20 @@ function Page() {
                 <div className="absolute inset-0">
                     <Image className="object-cover w-full h-full" width={3932} height={2620} src="/ImageService.png" alt="" />
                 </div>
-                <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
+                <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="flex justify-end max-w-7xl mx-auto p-10">
                         <div className="overflow-hidden bg-white md:w-1/2">
                             <div className="p-8 sm:py-10 sm:px-12">
-                                <p className="text-4xl font-semibold text-gray-900">
+                                <p className="text-5xl font-semibold text-content1">
                                     {t("service")}
                                 </p>
-                                <h2 className="p-2 mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
-                                    {t("hero-title")}
+                                <h2 className="mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
+                                    {t("hero-title")}{" "}
+                                    <span>
+                                    {t("hero-subtitle")}
+                                    </span>
                                 </h2>
-                                {/* <p className=" mt-6 text-base font-normal leading-tight text-gray-900">
+                                {/* <p className=" mt-6 text-base font-normal leading-tight text-content1">
                                     {`เราเป็นผู้เชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับขั้นตอนการนำเข้าสินค้าทุกชนิด รวมทั้งพิกัดอัตราภาษีต่างๆ ทั้งผู้ชำนาญศุลกากร ตัวแทนออกของรับอนุญาต ช่วยลดภาระด้านการนำเข้าสินค้า`}
                                 </p> */}
                             </div>
@@ -86,17 +89,17 @@ function Page() {
                                             </div>
                                         </div>
                                         <div className="flex flex-col items-start xl:px-10 mt-10">
-                                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{t("service-boxtitle1")}</h2>
-                                            <p className="mt-10 text-xl leading-relaxed text-gray-800">{t("service-box1")}</p>
+                                            <h2 className="text-3xl font-bold leading-tight text-content1 sm:text-4xl lg:text-5xl">{t("service-boxtitle1")}</h2>
+                                            <p className="mt-10 text-xl leading-relaxed text-content1">{t("service-box1")}</p>
                                             <ul className="mt-5 space-y-5 sm:mt-10">
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
                                                     <span className="ml-3 text-lg font-bold font-pj">{t("service-custom1")}</span>
                                                 </li>
 
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
@@ -140,10 +143,10 @@ function Page() {
 
                                         </div>
                                         <div className="flex flex-col items-start xl:px-10 mt-10">
-                                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{t("service-boxtitle2")}</h2>
-                                            <p className="mt-10 text-xl leading-relaxed text-gray-800">{t("service-box2")}</p>
+                                            <h2 className="text-3xl font-bold leading-tight text-content1 sm:text-4xl lg:text-5xl">{t("service-boxtitle2")}</h2>
+                                            <p className="mt-10 text-xl leading-relaxed text-content1">{t("service-box2")}</p>
                                             <ul className="mt-5 space-y-5 sm:mt-10">
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
@@ -151,7 +154,7 @@ function Page() {
                                                 </li>
                                             </ul>
                                             <ul className="mt-5 space-y-5 sm:mt-10">
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
@@ -159,7 +162,7 @@ function Page() {
                                                 </li>
                                             </ul>
                                             <ul className="mt-5 space-y-5 sm:mt-10">
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
@@ -187,16 +190,16 @@ function Page() {
                                         </div>
 
                                         <div className="flex flex-col items-start xl:px-10 mt-10">
-                                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{t("service-boxtitle5")}</h2>
+                                            <h2 className="text-3xl font-bold leading-tight text-content1 sm:text-4xl lg:text-5xl">{t("service-boxtitle5")}</h2>
                                             <ul className="mt-5 space-y-5 sm:mt-10">
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
                                                     <span className="ml-3 text-lg font-bold font-pj">{t("service-custom6")}</span>
                                                 </li>
 
-                                                {/* <li className="flex items-center text-gray-900">
+                                                {/* <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
@@ -243,29 +246,29 @@ function Page() {
                                             </div>
                                         </div>
                                         <div className="flex flex-col items-start xl:px-10 mt-10">
-                                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{t("service-boxtitle3")}</h2>
-                                            <p className="mt-10 text-xl leading-relaxed text-gray-800">{t("service-box3")}</p>
+                                            <h2 className="text-3xl font-bold leading-tight text-content1 sm:text-4xl lg:text-5xl">{t("service-boxtitle3")}</h2>
+                                            <p className="mt-10 text-xl leading-relaxed text-content1">{t("service-box3")}</p>
                                             <ul className="mt-5 space-y-5 sm:mt-10">
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
                                                     <span className="ml-3 text-lg font-bold">{t("service-custom7")}</span>
                                                 </li>
 
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
                                                     <span className="ml-3 text-lg font-bold">{t("service-custom8")}</span>
                                                 </li>
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
                                                     <span className="ml-3 text-lg font-bold font-pj">{t("service-custom9")}</span>
                                                 </li>
-                                                <li className="flex items-center text-gray-900">
+                                                <li className="flex items-center text-content1">
                                                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg>
@@ -292,8 +295,8 @@ function Page() {
                                             </div>
                                         </div>
                                         <div className="flex flex-col items-start xl:px-10 mt-10">
-                                            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">{t("service-boxtitle6")}</h2>
-                                            <p className="mt-10 text-xl leading-relaxed text-gray-800">{t("service-box6")}</p>
+                                            <h2 className="text-3xl font-bold leading-tight text-content1 sm:text-4xl lg:text-5xl">{t("service-boxtitle6")}</h2>
+                                            <p className="mt-10 text-xl leading-relaxed text-content1">{t("service-box6")}</p>
                                         </div>
                                     </div>
                                 </div>

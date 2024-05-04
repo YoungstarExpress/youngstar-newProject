@@ -11,7 +11,7 @@ function Page() {
     const {
         t,
         i18n: { changeLanguage, language }
-      } = useTranslation();
+    } = useTranslation();
 
     return (
         <div className="bg-content2" id="Company">
@@ -20,22 +20,26 @@ function Page() {
                 <div className="absolute inset-0">
                     <Image className="object-cover w-full h-full" width={3932} height={2620} src="/sea-hero.jpg" alt="" />
                 </div>
-                <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
+                <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="flex justify-start max-w-7xl mx-auto p-10">
                         <div className="overflow-hidden bg-white md:w-1/2">
                             <div className="p-8 sm:py-10 sm:px-12">
-                                <p className="text-4xl font-semibold text-gray-900">
+                                <p className="text-5xl font-semibold text-content1">
                                     {t("company")}
                                 </p>
-                                <h2 className="p-2 mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
-                                {t("hero-title")}
+                                <h2 className="mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
+                                    {t("hero-title")}
+                                    {" "}
+                                    <span>
+                                        {t("hero-subtitle")}
+                                    </span>
                                 </h2>
-                                {/* <p className=" mt-6 text-base font-normal leading-tight text-gray-900">
+                                {/* <p className=" mt-6 text-base font-normal leading-tight text-content1">
                                     {`เราเป็นผู้เชี่ยวชาญในการให้คำปรึกษาเกี่ยวกับขั้นตอนการนำเข้าสินค้าทุกชนิด รวมทั้งพิกัดอัตราภาษีต่างๆ ทั้งผู้ชำนาญศุลกากร ตัวแทนออกของรับอนุญาต ช่วยลดภาระด้านการนำเข้าสินค้า`}
                                 </p> */}
                             </div>
                         </div>
-                    </div>   
+                    </div>
                 </div>
             </div>
             <div className="flex justify-center">
@@ -57,15 +61,15 @@ function Page() {
                             </div>
                             <div className="px-4 py-8 text-center md:text-left md:p-0 md:order-1">
                                 <h2 className="mt-6 text-4xl font-bold sm:text-6xl xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-900 leading-relaxed">
-                                {t("hero-title")}
+                                    {t("hero-title")}
                                 </h2>
-                                <p className="mt-8 text-2xl font-normal text-gray-800 ">
-                                 {t("company-story")}                           
-                                 </p>
+                                <p className="mt-8 text-2xl font-normal text-content1 ">
+                                    {t("company-story")}
+                                </p>
                                 {/* <a
                                     href="#"
                                     title=""
-                                    className="text-2xl inline-flex items-center mt-8 font-bold text-gray-900 rounded hover:text-gray-600  group focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                                    className="text-2xl inline-flex items-center mt-8 font-bold text-content1 rounded hover:text-gray-600  group focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                                 >
                                     อ่านต่อ
                                     <svg
