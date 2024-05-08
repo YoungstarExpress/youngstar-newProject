@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/cp092106/public_html/
+    - export DEPLOYPATH=/home2/cp092106/public_html/youngstargroup.com/
     - /bin/cp -R * $DEPLOYPATH
