@@ -17,13 +17,13 @@ function Hero() {
       <div className="">
         <div className="flex justify-center px-5 sm:px-0">
           <div className="max-w-5xl text-center ">
-            <div className="mt-10 md:mt-16 text-5xl md:text-7xl font-bold text-primary-800 hidden md:block">
+            <div className="mt-10 md:mt-20 text-5xl md:text-7xl font-bold text-primary-800 hidden md:block">
               {t("welcome")}
             </div>
-            <div className="md:p-2 md:pt-4 sm:pt-0 text-5xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-l from-amber-500 via-primary-900 to-primary-700 md:text-7xl font-bold leading-relaxed">
+            <div className="mt-10 md:mt-0 md:p-2 md:pt-4 sm:pt-0 text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-l from-amber-500 via-primary-900 to-primary-700 font-bold leading-relaxed">
               {t("hero-title")}
             </div>
-            <div className="md:pt-4  sm:pt-0 text-5xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-primary-900 to-primary-700 md:text-7xl font-bold leading-relaxed">
+            <div className="md:pt-4 sm:pt-0 text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-primary-900 to-primary-700 md:text-7xl font-bold leading-relaxed">
               {t("hero-subtitle")}
             </div>
           </div>
