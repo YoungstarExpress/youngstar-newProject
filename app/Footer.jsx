@@ -130,7 +130,7 @@ function Footer() {
                     title=""
                     className="flex text-base text-white transition-all duration-200 hover:text-primary focus:text-primary"
                   >
-                    <LuMapPin size={30} className="" />
+                    <LuMapPin size={30} className="shrink-0" />
                     <div className="pl-2">
                     {t("address1")}
                       <br />{t("address2")}{" "}<br />
